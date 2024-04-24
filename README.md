@@ -11,3 +11,4 @@
 ![subscriber-terminal](subscriber-terminal.png)
 ![three-result](three-result.png)
 Pada gambar pertama terlihat setiap instance subscriber menerima pesan yang berbeda-beda dan setiap instance tidak menerima seluruh data yang dikirim oleh publisher. Hal ini terjadi karena ketiga instance subscriber tersebut berjalan secara paralel sehingga data publisher yang sudah diterima oleh satu instance subscriber tidak akan bisa diterima oleh instance subscriber yang lain. Oleh karena itu, pada gambar kedua terliha grafik pada chart queued messages mengalami penurunan yang lebih cepat dibandingkan saat kita hanya menjalankan satu instance subscriber.
+Hal yang menurut saya bisa diimprove dari program subscriber adalah penggunaan multi threading bagi subscriber dalam meneima message dari publisher sehingga subscriber dapat menerima message dari publisher dengan lebih cepat
